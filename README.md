@@ -74,7 +74,5 @@ Ação Sugerida: Orientar o cliente a utilizar outra forma de pagamento (outro c
 - Ampliar a base com mais códigos de erro e problemas de conexão.
 - Voltar ao menu principal após cada diagnóstico, sem precisar reiniciar o fluxo.
 
-## 👤 Autor
 
-**SEU NOME**
-[LinkedIn](https://linkedin.com/in/SEU-PERFIL) · [GitHub](https://github.com/SEU-USUARIO)
+
