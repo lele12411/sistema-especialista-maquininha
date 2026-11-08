@@ -1,0 +1,96 @@
+{
+  "erros_codigo": [
+    {
+      "codigo": "51",
+      "sintomas": ["51","saldo", "limite", "recusado", "sem saldo", "sem limite", "debito", "falta de saldo", "cartao sem fundo", "negado por saldo", "estourou o limite", "conta zerada", "nao passa por saldo", "sem credito", "limite estourado"],
+      "titulo": "Código 51 - Saldo/Limite Insuficiente",
+      "explicacao": "O banco emissor recusou a compra porque a conta não tem saldo (débito) ou o limite de crédito acabou.",
+      "acao": "Orientar o cliente a utilizar outra forma de pagamento (outro cartão, Pix ou dinheiro)."
+    },
+    {
+      "codigo": "01/05",
+      "sintomas":  ["01", "05", "seguranca", "fraude", "bloqueio", "diretrizes", "suspeita", "bloqueado pelo banco", "analise de risco", "compra suspeita", "seguranca do banco", "suspeita de fraude", "bloqueio preventivo"], 
+      "titulo": "Código 01/05 - Bloqueio de Segurança / Fraude",
+      "explicacao": "O banco bloqueou a compra por motivos de segurança, suspeita de fraude ou diretrizes internas da instituição.",
+      "acao": "O cliente deve entrar em contato com o banco emissor do cartão para desbloquear a operação."
+    },
+    {
+      "codigo": "54",
+      "sintomas": ["54", "vencido", "validade", "expirado", "data", "cartao vencido", "passou da validade", "venceu", "ano vencido", "mes vencido", "fora da validade"],  
+      "titulo": "Código 54 - Cartão Expirado",
+      "explicacao": "A data de validade impressa no cartão já expirou.",
+      "acao": "Pedir outro cartão válido para o pagamento."
+    },
+    {
+      "codigo": "62/63",
+      "sintomas": ["62", "63", "restricao", "bloqueio temporario", "contratuais", "problema na conta", "restrito", "bloqueio parcial", "conta bloqueada", "restricao de uso", "bloqueio de conta"], 
+      "titulo": "Código 62/63 - Restrições de Uso",
+      "explicacao": "O banco emissor impôs restrições de uso ao cartão (bloqueio temporário, restrições contratuais ou problemas na conta).",
+      "acao": "Verificar status do cartão diretamente com o banco do cliente."
+    },
+    {
+      "codigo": "55",
+      "sintomas": ["55", "senha", "incorreta", "errada", "senha incorreta", "senha errada", "digitou errado", "pin incorreto", "pin errado", "errou a senha"], 
+      "titulo": "Código 55 - Senha Incorreta",
+      "explicacao": "Senha digitada incorretamente.",
+      "acao": "Pedir para o cliente digitar a senha corretamente, e alertar risco de bloqueio após várias tentativas."
+    },
+    {
+      "codigo": "75",
+      "sintomas": ["75", "tentativas", "bloqueado", "excesso", "senha bloqueada", "muitas tentativas", "bloqueou a senha", "esreveu senha errada muitas vezes", "tentou muito", "bloqueado por senha incorreta"], 
+      "titulo": "Código 75 - Excesso de Tentativas de Senha",
+      "explicacao": "Excesso de tentativas incorretas.",
+      "acao": "Cartão bloqueado pelo banco. O cliente deve regularizar a senha com a instituição financeira."
+    },
+    {
+      "codigo": "68",
+      "sintomas": ["68", "demora", "timeout", "conexao", "rede", "travou", "tempo limite", "demorou", "nao responde", "estourou o tempo", "demorou a responder", "lentidao", "demorando muito", "travado na resposta"], 
+      "titulo": "Código 68 - Time-out de Comunicação",
+      "explicacao": "A transação foi enviada, mas o banco/adquirente demorou muito para responder e a maquininha estourou o tempo limite.",
+      "acao": "Verificar imediatamente o histórico/extrato de vendas antes de tentar passar o cartão novamente para evitar o risco de cobrança duplicada. Se não constar, aguarde um instante e tente de novo."
+    },
+    {
+      "codigo": "91/96",
+      "sintomas":  ["91", "96", "sem sinal", "falha", "comunicacao", "inacessivel", "wifi", "4g", "rede caiu", "sem internet", "sinal oscilando", "fora do ar", "banco fora do ar", "sem conexao", "rede instavel"], 
+      "titulo": "Código 91/96 - Falha de Comunicação / Banco Inacessível",
+      "explicacao": "A rede de comunicação falhou ou o banco emissor está inacessível, impedindo que a transação seja processada.",
+      "acao": "Aguardar alguns instantes, verificar o sinal da máquina (4G/Wi-Fi) e tentar novamente. Se persistir, testar em outra máquina ou sugerir Pix/dinheiro."
+    },
+    {
+      "codigo": "9",
+      "sintomas": ["modalidade", "funcao", "incompativel", "invalida", "credito ou debito", "passou errado", "funcao errada", "escolheu errado", "debito no credito", "credito no debito"], 
+      "explicacao": "Tentativa de uso em função inválida.",
+      "acao": "Selecionar a modalidade correta (débito ou crédito) compatível com o cartão."
+    },
+    {
+      "codigo": "10",
+      "sintomas":  ["mcc", "ramo", "atividade", "estabelecimento", "nao aceito", "segmento nao permitido", "tipo de comercio", "ramo nao permitido"], 
+      "titulo": "MCC Incompatível",
+      "explicacao": "O ramo de atividade do estabelecimento não é aceito por esse tipo de cartão.",
+      "acao": "Verificar status do cartão diretamente com o banco do cliente."
+    }
+  ],
+  "problemas_fisicos": [
+    {
+      "id": "atolamento",
+      "sintomas": ["preso", "enganchado", "amassado", "atolado", "travou", "atolamento", "guilhotina", "enroscado", "nao puxa papel", "travado", "encalhado", "emperrado"], 
+      "titulo": "Atolamento de Papel",
+      "explicacao": "A bobina rodou ou foi colocada torta, trancando a guilhotina ou a tampa de saída.",
+      "acao": "Abra a tampa do compartimento, ajuste o alinhamento da bobina puxando um pedaço de papel para fora e feche firmemente até ouvir o clique."
+    },
+    {
+      "id": "papel_branco",
+      "sintomas": ["branco", "sem texto", "apagado", "nao sai nada", "folha branca", "comprovante em branco", "imprimindo em branco", "papel saiu liso", "comprovante liso", "saiu sem nada escrito"], 
+      "titulo": "Comprovante Saindo em Branco",
+      "explicacao": "O papel térmico foi inserido do lado errado no compartimento da impressora.",
+      "acao": "Abra o compartimento e inverta o lado da bobina de papel, o lado sensível ao calor precisa ficar virado para a cabeça de impressão. Reimprima a 2ª via da última transação."
+    },
+    {
+      "id": "bateria_fraca",
+      "sintomas": ["bateria", "fraca", "carga", "motor", "abaixo", "descarregada", "pouca bateria", "bateria morrendo", "nao imprime porque ta sem bateria", "aviso de bateria", "bateria descarregando", "quase sem bateria"],
+      "titulo": "Aviso de Bateria Fraca na Impressão",
+      "explicacao": "O motor térmico da impressora exige alta corrente elétrica e é bloqueado pelo sistema se a bateria estiver abaixo de 5% a 10%.",
+      "acao": "Conecte a maquininha ao carregador imediatamente. A aprovação da venda foi concluída, reimprima assim que atingir o nível mínimo de carga."
+    }
+  ]
+}
